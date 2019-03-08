@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/noteTitle"
+        android:layout_width="395dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FF72D7CD"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/noteBody"
+        android:layout_width="395dp"
+        android:layout_height="50dp"
+        android:background="#FF72D7CD"
+        app:layout_constraintEnd_toEndOf="@+id/noteDate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/noteDate"
+        app:layout_constraintTop_toBottomOf="@+id/noteDate" />
+
+    <TextView
+        android:id="@+id/noteDate"
+        android:layout_width="395dp"
+        android:layout_height="22dp"
+        android:background="#FF72D7CD"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toEndOf="@+id/noteTitle"
+        app:layout_constraintStart_toStartOf="@+id/noteTitle"
+        app:layout_constraintTop_toBottomOf="@+id/noteTitle" />
+</android.support.constraint.ConstraintLayout>
